@@ -36,13 +36,17 @@
         main.style.filter = 'blur(0px)'
       }, 1)
     })
+
+ 
+
+
     </script>
   </head>
   <body>
     <div id="vanta"></div>
     <main class="animated">
       <header>
-        <img src="./images/banner.jpeg"  width="80"/>
+        <img id="audio" src="./images/banner.jpeg"  width="80"/>
         <h1>@BUBD</h1>
       </header>
       <ul>
@@ -71,6 +75,14 @@
           </a>
         </li>
       </ul>
+
+      <audio id="foobar" src="./images/intro.mp3" preload="auto"> 
+      <script>
+          var sample = document.getElementById("foobar");
+            sample.play();
+      </script>
+ 
+
     </main>
   </body>
 </html>
